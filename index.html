@@ -1,437 +1,851 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Restaurant Menu</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="icon" href="logo1.jpg">
-        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=YkRzQJRtjk5Og-LJ2EGs6yuOgI2HkCEtvvMHyGw8rCU-eP4D5ljBNi8piY_qEoh8eocjLQNnYxvk-hK_1OAHEw" charset="UTF-8"></script>
-        <link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9sYXlhbGlyYWNoaWluZS53ZWIuYXBwLw"/>
-    </head>
-    <body>
-        <div class="menu center">
-            <img src="logoo.png" alt="Restaurant Logo" width="375px" height="210px" class="center">
-            <div class="button-toolbar">
-                <button onclick="scrollToSection('appetizers')">Appetizers</button>
-                <button onclick="scrollToSection('salad')">Salad</button>
-                <button onclick="scrollToSection('aal-lebnene')">Aal Lebnene</button>
-                <button onclick="scrollToSection('sandwiches')">Sandwiches</button>
-            </div>
-            <div class="button-toolbar">
-                <button onclick="scrollToSection('kaake')">Kaake</button>
-                <button onclick="scrollToSection('saj')">Saj</button>
-                <button onclick="scrollToSection('cold-drinks')">Cold Drinks</button>
-                <button onclick="scrollToSection('hot-drinks')">Hot Drinks</button>
-                <button onclick="scrollToSection('alcohol')">Alcohol</button>
-            </div>
-            <h2 id="appetizers" class="section-title center" style="border-color: #cca64c;">Appetizers</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Fries</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Fries cheese</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Nachos</span>
-                    <span style="color: #cca64c;">$3.00</span>
-                </li>
-            </ul>
-            <h2 id="salad" class="section-title center" style="border-color: #cca64c;">Salad</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Fatouche</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Taboule</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Chicken Caesar</span>
-                    <span style="color: #cca64c;">$5.00</span>
-                </li>
-            </ul>
-            <h2 id="aal-lebnene" class="section-title center" style="border-color: #cca64c;">Aal Lebnene</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Hummus</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Labneh</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Labneh + Toum</span>
-                    <span style="color: #cca64c;">$2.75</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Jebneh</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Chanklich</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Mtabal</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Warak Aanab</span>
-                    <span style="color: #cca64c;">$2.25</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Chmandar</span>
-                    <span style="color: #cca64c;">$2.25</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Banadoura Chareh</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Batata Mekliye</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Batata b Kezebra</span>
-                    <span style="color: #cca64c;">$2.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Batata Harra</span>
-                    <span style="color: #cca64c;">$2.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Mouaajanet</span>
-                    <span style="color: #cca64c;">$5.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Makanek</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Hummus + Lahmeh</span>
-                    <span style="color: #cca64c;">$4.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Soujouk</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Sfihet Kafta</span>
-                    <span style="color: #cca64c;">$6.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Sawdet Djej</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Sawdet eejel</span>
-                    <span style="color: #cca64c;">$4.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Jweneh Mekliye</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Machewe Mchakal</span>
-                    <span style="color: #cca64c;">$10.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">1 Chich Kafta</span>
-                    <span style="color: #cca64c;">$2.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">1 Chich Lahme (Ghanam)</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">1 Chich Tawook</span>
-                    <span style="color: #cca64c;">$2.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Eres Chahmeh</span>
-                    <span style="color: #cca64c;">$3.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Eres Lahmeh</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Batata Mechwe</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Farrouj Mechwe</span>
-                    <span style="color: #cca64c;">$8.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Kebbe Nayye</span>
-                    <span style="color: #cca64c;">$5.00</span>
-                </li>
-            </ul>
-            <h2 id="sandwiches" class="section-title center" style="border-color: #cca64c;">Sandwiches</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Fries</span>
-                    <span style="color: #cca64c;">$3.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Tawook</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Fajita</span>
-                    <span style="color: #cca64c;">$4.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Hamburger</span>
-                    <span style="color: #cca64c;">$4.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Chicken Burger</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Cheese Burger</span>
-                    <span style="color: #cca64c;">$4.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Francisco</span>
-                    <span style="color: #cca64c;">$4.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Burrito</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Crispy</span>
-                    <span style="color: #cca64c;">$4.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Chicken Sub</span>
-                    <span style="color: #cca64c;">$4.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Submarine</span>
-                    <span style="color: #cca64c;">$4.00</span>
-                </li>
-            </ul>
-            <h2 id="kaake" class="section-title center" style="border-color: #cca64c;">Kaake</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Picon</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Four Cheese</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Aakawi</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Mix Cheese</span>
-                    <span style="color: #cca64c;">$4.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Sitos</span>
-                    <span style="color: #cca64c;">$5.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Kafta</span>
-                    <span style="color: #cca64c;">$6.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Pizza</span>
-                    <span style="color: #cca64c;">$6.50</span>
-                </li>
-            </ul>
-            <h2 id="saj" class="section-title center" style="border-color: #cca64c;">Saj</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Zaatar</span>
-                    <span style="color: #cca64c;">$1.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Zaatar + Khedra</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Labneh</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Labneh + Khedra</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Cheese</span>
-                    <span style="color: #cca64c;">$3.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Cheese + Jambon</span>
-                    <span style="color: #cca64c;">$4.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Cheese + Khedra</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-            </ul>
-            <h2 id="cold-drinks" class="section-title center" style="border-color: #cca64c;">Cold Drinks</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Soft Drink</span>
-                    <span style="color: #cca64c;">$0.75</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Fresh Orange</span>
-                    <span style="color: #cca64c;">$1.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Lemonade</span>
-                    <span style="color: #cca64c;">$1.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Minted</span>
-                    <span style="color: #cca64c;">$2.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Water Small</span>
-                    <span style="color: #cca64c;">$0.40</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Water Big</span>
-                    <span style="color: #cca64c;">$0.70</span>
-                </li>
-            </ul>
-            <h2 id="hot-drinks" class="section-title center" style="border-color: #cca64c;">Hot Drinks</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Nescafe</span>
-                    <span style="color: #cca64c;">$1.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Cappuccino</span>
-                    <span style="color: #cca64c;">$1.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Hot Chocolate</span>
-                    <span style="color: #cca64c;">$1.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Tea</span>
-                    <span style="color: #cca64c;">$1.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Rakwe Small</span>
-                    <span style="color: #cca64c;">$2</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Rakwe Big</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-            </ul>
-            <h2 id="alcohol" class="section-title center" style="border-color: #cca64c;">Alcohol</h2>
-            <ul>
-                <li class="item center">
-                    <span style="color: #cca64c;">Aarak Baladi 1/4</span>
-                    <span style="color: #cca64c;">$3.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Aarak Baladi 1/2</span>
-                    <span style="color: #cca64c;">$5.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Whiskey Red Label Bottle</span>
-                    <span style="color: #cca64c;">$23.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Whiskey Black Label Bottle</span>
-                    <span style="color: #cca64c;">$35.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Vodka Bottle</span>
-                    <span style="color: #cca64c;">$10.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Vodka Stoly Bottle</span>
-                    <span style="color: #cca64c;">$13.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Whisky Red Label Glass</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Whisky Black Label Glass</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Vodka Glass</span>
-                    <span style="color: #cca64c;">$1.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Red Wine</span>
-                    <span style="color: #cca64c;">$8.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Rose Wine</span>
-                    <span style="color: #cca64c;">$10.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Wine Glass</span>
-                    <span style="color: #cca64c;">$1.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Beer Almaza</span>
-                    <span style="color: #cca64c;">$2.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Beirut Beer</span>
-                    <span style="color: #cca64c;">$2.00</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Mexican Beer</span>
-                    <span style="color: #cca64c;">$3.50</span>
-                </li>
-                <li class="item center">
-                    <span style="color: #cca64c;">Dark blue</span>
-                    <span style="color: #cca64c;">$1</span>
-                </li>
-            </ul>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Layali Rachiin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+
+
+  <!-- ======= Menu Section ======= -->
+  <section id="menu" class="menu">
+
+
+
+    <div class="section-title">
+      <h6><img src="assets/img/logo.png" height="100"></span></h2>
+
+    </div>
+
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="menu-flters">
+            <li data-filter="*" class="filter-active">Show All</li>
+            <li data-filter=".filter-appetizers">Dessert</li>
+            <li data-filter=".filter-salad">Salads</li>
+            <li data-filter=".filter-lebnene">Aal Lebnene</li>
+            <li data-filter=".filter-kaake">Kaake</li>
+            <li data-filter=".filter-sandwiches">Sandwiches</li>
+            <li data-filter=".filter-saj">Saj</li>
+            <li data-filter=".filter-colddrinks">Cold Drinks</li>
+            <li data-filter=".filter-hotdrinks">Hot Drinks</li>
+            <li data-filter=".filter-alcohol">Alcohol</li>
+          </ul>
         </div>
-        <div class="contact-toolbar">
-            <div class="contact-info">
-                <a href="https://www.instagram.com/layalirachiine_restaurant" class="contact-button">
-                    <i class="fab fa-instagram"></i>
-                    Instagram
-                </a>
-                <a href="tel:+96171895896" class="contact-button">
-                    <i class="fas fa-phone"></i>
-                    Phone
-                </a>
-                <a href="https://maps.apple.com/?address=North%20Governorate,%20Lebanon&auid=57645732144475864&ll=34.395348,35.919750&lsp=7618&q=North%20Governorate&t=h" class="contact-button">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Location
-                </a>
-            </div>
+      </div>
+
+      <div class="row menu-container">
+
+
+
+        <div class="col-lg-12 menu-item filter-appetizers">
+          <br>
+          <div class=" text-center ">
+            <b>APPETIZERS</b>
+          </div>
         </div>
-        <!-- <script>
-            function scrollToSection(sectionId) {
-                var section = document.getElementById(sectionId);
-                window.scrollTo({
-                    behavior: 'smooth',
-                    top: section.offsetTop
-                });
-            }
-        </script> -->
-    </body>
-    
+
+
+        <div class="col-lg-6 menu-item filter-appetizers">
+          <div class="menu-content">
+            Fries <span>2.50 $</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-appetizers">
+          <div class="menu-content">
+            Fries Cheese <span>3.50 $</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-appetizers">
+          <div class="menu-content">
+            Nachos <span>3.00 $</span>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-12 menu-item filter-appetizers">
+          <hr>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-salad">
+          <br>
+          <div class=" text-center ">
+            <b>SALADS</b>
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-salad">
+          <div class="menu-content">
+            Fatouche<span>$3.50</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-salad">
+          <div class="menu-content">
+            Taboule<span>$3.50</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-salad">
+          <div class="menu-content">
+            Chicken Caesar<span>$5.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-salad">
+          <hr>
+        </div>
+
+        <div class="col-lg-12 menu-item filter-lebnene">
+          <br>
+          <div class=" text-center ">
+            <b>Aal Lebnene</b>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Hummus <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Labneh <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Labneh + Toum <span>$2.75</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Jebneh <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Chanklich <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Mtabal <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Warak Aanab <span>$2.25</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Chmandar <span>$2.25</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Banadoura Chareh <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Batata Mekliye <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Batata b Kezebra <span>$2.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Batata Harra <span>$2.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Mouaajanet <span>$5.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Makanek <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Hummus + Lahmeh <span>$4.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Soujouk <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Sfihet Kafta <span>$6.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Sawdet Djej <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Sawdet eejel <span>$4.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Jweneh Mekliye <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Machewe Mchakal <span>$10.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            1 Chich Kafta <span>$2.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            1 Chich Lahme (Ghanam) <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            1 Chich Tawook <span>$2.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Eres Chahmeh <span>$3.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Eres Lahmeh <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Batata Mechwe <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Farrouj Mechwe <span>$8.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-lebnene">
+          <div class="menu-content">
+            Kebbe Nayye <span>$5.00</span>
+          </div>
+        </div>
+
+        <div class="col-lg-12 menu-item filter-lebnene">
+          <hr>
+        </div>
+
+
+
+        <div class="col-lg-12 menu-item filter-sandwiches">
+          <br>
+          <div class=" text-center ">
+            <b>Sandwiches</b>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Fries <span>$3.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Tawook <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Fajita <span>$4.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Hamburger <span>$4.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Chicken Burger <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Cheese Burger <span>$4.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Francisco <span>$4.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Burrito <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Crispy <span>$4.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Chicken Sub <span>$4.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-sandwiches">
+          <div class="menu-content">
+            Submarine <span>$4.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-sandwiches">
+          <hr>
+        </div>
+
+
+
+
+        <div class="col-lg-12 menu-item filter-kaake">
+          <br>
+          <div class=" text-center ">
+            <b>Kaake</b>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-6 menu-item filter-kaake">
+          <div class="menu-content">
+            Picon <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-kaake">
+          <div class="menu-content">
+            Four Cheese <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-kaake">
+          <div class="menu-content">
+            Aakawi <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-kaake">
+          <div class="menu-content">
+            Mix Cheese <span>$4.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-kaake">
+          <div class="menu-content">
+            Sitos <span>$5.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-kaake">
+          <div class="menu-content">
+            Kafta <span>$6.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-kaake">
+          <div class="menu-content">
+            Pizza <span>$6.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-kaake">
+          <hr>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-saj">
+          <br>
+          <div class=" text-center ">
+            <b>Saj</b>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-saj">
+          <div class="menu-content">
+            Zaatar <span>$1.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-saj">
+          <div class="menu-content">
+            Zaatar + Khedra <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-saj">
+          <div class="menu-content">
+            Labneh <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-saj">
+          <div class="menu-content">
+            Labneh + Khedra <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-saj">
+          <div class="menu-content">
+            Cheese <span>$3.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-saj">
+          <div class="menu-content">
+            Cheese + Jambon <span>$4.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-saj">
+          <div class="menu-content">
+            Cheese + Khedra <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-saj">
+          <hr>
+        </div>
+
+
+
+        <div class="col-lg-12 menu-item filter-colddrinks">
+          <br>
+          <div class=" text-center ">
+            <b>Cold Drinks</b>
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-colddrinks">
+          <div class="menu-content">
+            Soft Drink <span>$0.75</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-colddrinks">
+          <div class="menu-content">
+            Fresh Orange <span>$1.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-colddrinks">
+          <div class="menu-content">
+            Lemonade <span>$1.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-colddrinks">
+          <div class="menu-content">
+            Minted <span>$2.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-colddrinks">
+          <div class="menu-content">
+            Water Small <span>$0.40</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-colddrinks">
+          <div class="menu-content">
+            Water Big <span>$0.70</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-colddrinks">
+          <hr>
+        </div>
+
+        <div class="col-lg-12 menu-item filter-hotdrinks">
+          <br>
+          <div class=" text-center ">
+            <b>Hot Drinks</b>
+          </div>
+        </div>
+
+        <div class="col-lg-6 menu-item filter-hotdrinks">
+          <div class="menu-content">
+            Nescafe <span>$1.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-hotdrinks">
+          <div class="menu-content">
+            Cappuccino <span>$1.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-hotdrinks">
+          <div class="menu-content">
+            Hot Chocolate <span>$1.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-hotdrinks">
+          <div class="menu-content">
+            Tea <span>$1.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-hotdrinks">
+          <div class="menu-content">
+            Rakwe Small <span>$2</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-hotdrinks">
+          <div class="menu-content">
+            Rakwe Big <span>$3.50</span>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-12 menu-item filter-hotdrinks">
+          <hr>
+        </div>
+
+        <div class="col-lg-12 menu-item filter-alcohol">
+          <br>
+          <div class=" text-center ">
+            <b>Alcohol</b>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Aarak Baladi 1/4 <span>$3.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Aarak Baladi 1/2 <span>$5.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Whiskey Red Label Bottle <span>$23.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Whiskey Black Label Bottle <span>$35.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Vodka Bottle <span>$10.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Vodka Stoly Bottle <span>$13.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Whisky Red Label Glass <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Whisky Black Label Glass <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Vodka Glass <span>$1.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Red Wine <span>$8.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Rose Wine <span>$10.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Wine Glass <span>$1.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Beer Almaza <span>$2.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Beirut Beer <span>$2.00</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Mexican Beer <span>$3.50</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-6 menu-item filter-alcohol">
+          <div class="menu-content">
+            Dark blue <span>$1</span>
+          </div>
+        </div>
+
+
+        <div class="col-lg-12 menu-item filter-alcohol">
+          <hr>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+  </section><!-- End Menu Section -->
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/layalirachiine_restaurant" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>layalirachiin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
-
-
-
